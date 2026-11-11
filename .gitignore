@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+*.user
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environments
+venv/
+env/
+
+# Environment Variables
+.env
+
+# Build Folders
+obj/
+bin/
