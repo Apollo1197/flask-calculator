@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
 from controllers.calculator_controller import CalculatorController
 
-main = Flask(__name__)
+app = Flask(__name__)
 
 controller = CalculatorController()
 
 
-@main.route("/", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def home():
 
     result = None
@@ -30,4 +30,4 @@ def home():
 
 
 if __name__ == "__main__":
-    main.run(debug=True)
+    app.run(debug=True)
